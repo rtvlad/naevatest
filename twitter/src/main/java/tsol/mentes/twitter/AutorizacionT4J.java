@@ -19,11 +19,11 @@ import twitter4j.conf.ConfigurationBuilder;
 * @author Javier Torresano
 *
 */
-public class Autorizacion {
+public class AutorizacionT4J {
 	
 	
 	 //Constructor de la clase
-	Autorizacion() throws IOException, TwitterException {
+	AutorizacionT4J() throws IOException, TwitterException {
 		
 		ConfigurationBuilder configBuilder = new ConfigurationBuilder();
 		configBuilder.setDebugEnabled(true)

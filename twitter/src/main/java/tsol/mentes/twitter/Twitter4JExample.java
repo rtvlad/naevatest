@@ -16,9 +16,9 @@ import twitter4j.TwitterFactory;
 import twitter4j.conf.ConfigurationBuilder;
 
 
-public class TwitterJava {
+public class Twitter4JExample {
 	
-	TwitterJava() throws TwitterException {
+	Twitter4JExample() throws TwitterException {
 		
 		Twitter twitter;
 		ConfigurationBuilder configBuilder = new ConfigurationBuilder();
@@ -75,18 +75,18 @@ public class TwitterJava {
 			System.out.println(((Status) listado.get(i)).getText());
 		}
 		//Actualizar tu estado
-		Status tweetEscrito = twitter.updateStatus("[Naeva Tec|Javier Torresano] Twitter+Java - Tweet de prueba desde aplicacion Java");
+		Status tweetEscrito = twitter.updateStatus("[Desarrollo de mensajeria twitter via Java] - Developer: Javier");
 	}
 	
 	public static void main(String ar[]) throws TwitterException {
 		try {
-			Autorizacion aut = new Autorizacion();
+			AutorizacionT4J aut = new AutorizacionT4J();
 		} catch (IOException ex) {
-			Logger.getLogger(TwitterJava.class.getName()).log(Level.SEVERE, null, ex);			
+			Logger.getLogger(Twitter4JExample.class.getName()).log(Level.SEVERE, null, ex);			
 		} catch (TwitterException ex) {
-			Logger.getLogger(TwitterJava.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(Twitter4JExample.class.getName()).log(Level.SEVERE, null, ex);
 		}
-		TwitterJava twitter = new TwitterJava();
+		Twitter4JExample twitter = new Twitter4JExample();
 	}
 	
 }
