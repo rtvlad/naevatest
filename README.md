@@ -1,4 +1,4 @@
 naevatest
 =========
 
-Git learning repo for NaevaTec
+Git learning repo for NaevaTec.
